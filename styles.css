@@ -1,6 +1,8 @@
 :root {
-    --cor-de-fundo: #6059a7;
-    --branco:   rgba(162, 168, 255, 0.514);
+    --cor-de-fundo: #929292;
+    --branco:   rgb(255, 255, 255);
+    --laranja: #868686;
+    --azul-degrade: linear-gradient(97.54deg, #424242 35.49%, #326589 165.37%);
 }
 
 body {
@@ -9,13 +11,14 @@ body {
 
 
 h1 { 
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
 }
 .cabeçalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     }
 
     .container {
@@ -37,6 +40,26 @@ h1 {
 
 .lista-menu{
     display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    }
+
+    .lista-menu__titulo,
+    .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
 }
 
 .container__botao:checked ~ .lista-menu {
