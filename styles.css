@@ -2,10 +2,10 @@
 @import url(styles/header.css);
 
 :root {
-    --cor-de-fundo: #bd80cf;
-    --branco:   rgb(170, 101, 187);
+    --cor-de-fundo: #acacac;
+    --branco:   rgb(175, 175, 175);
     --laranja: #000000;
-    --azul-degrade: linear-gradient(97.54deg, #000000 35.49%, #326589 165.37%);
+    --azul-degrade: linear-gradient(97.54deg, #000000 35.49%, #a3a3a3 165.37%);
     --fonte-principal: “Poppins”;
 }
 
